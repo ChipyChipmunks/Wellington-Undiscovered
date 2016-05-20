@@ -2,6 +2,29 @@ body {
   height: 2000px;
 }
 
+#map-container {
+  height: 500px;
+  width: 80%;
+}
+
+#map {
+  height: 100%;
+}
+
+#foating-panel {
+  position: absolute;
+  top: 10px;
+  left: 25%;
+  z-index: 5;
+  background-color: #fff;
+  padding: 5px;
+  border: 1px solid #999;
+  text-align: center;
+  font-family: 'Roboto','sans-serif';
+  line-height: 30px;
+  padding-left: 10px;
+}
+
 .main-nav-top {
   width: 100%;
   display: table;
@@ -31,6 +54,35 @@ body {
 
 h1 {
   margin: 0;
+}
+
+.special-item-title {
+  font-size: 1em;
+}
+
+.special-item-paragraph {
+  max-width: 100px;
+}
+
+.special-item-list {
+  float: right;
+  display: -webkit-inline-flex;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  position: relative;
+  margin: -5em 1em 1em 1em;
+}
+
+.special-item-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: inline;
+}
+
+.special-item {
+  display: inline;
+  margin: 0% 1em 0% 1em;
 }
 
 /*# sourceMappingURL=wellington-undiscovered.css.map */
