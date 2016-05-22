@@ -5,18 +5,54 @@
 		<title>Wellington Undiscovered</title>
 		<link rel="stylesheet" type="text/css" href="wellington-undiscovered.scss">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<script src="wellington-undiscovered.js"></script>
+		<!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
 	</head>
-	<body>
 
+	<body>
 		<ul class="main-nav-top">
 			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">Wellington Undiscovered</a></li>
 		</ul>
 
 		<img class="cover-image" src="resources/images/wellington-night.jpg">
 
+		<ul class="special-item-list">
+			<li class="special-item">
+				<center><img src="resources/images/ash-tree.jpg" class="special-item-img"></center>
+				<center><h1 class="special-item-title">Special Tree</h1></center>
+				<center><p class="special-item-paragraph">This is a special tree, because it's special</p></center>
+			</li>
+
+			<li class="special-item">
+				<center><img src="resources/images/ash-tree.jpg" class="special-item-img"></center>
+				<center><h1 class="special-item-title">Special Tree</h1></center>
+				<center><p class="special-item-paragraph">This is a special tree, because it's special</p></center>
+			</li>
+
+			<li class="special-item">
+				<center><img src="resources/images/ash-tree.jpg" class="special-item-img"></center>
+				<center><h1 class="special-item-title">Special Tree</h1></center>
+				<center><p class="special-item-paragraph">This is a special tree, because it's special</p></center>
+			</li>
+		</ul>
+
 		<div class="welcome">
 			<h1>Wellington Undiscovered</h1>
+			<h2>"This is a clever quote about Wellington</h2>
+			<h2> Appreciate it." - Person</h2>
+			
 		</div>
+
+		<h1>Places Near You</h1>
+
+		<div id="floating-panel">
+     		 <input id="address" type="textbox" value="Sydney, NSW">
+     		 <input id="submit" type="button" value="Geocode">
+    	</div>
+    	
+    	<div id="map"></div>
+
+    	<script async defer
+    		src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap">
+    	</script>
 	</body>
 </html>
