@@ -5,16 +5,22 @@
 		<title>Wellington Undiscovered</title>
 		<link rel="stylesheet" type="text/css" href="wellington-undiscovered.scss">
 		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.2/css/font-awesome.min.css">
-		<script src="http://maps.googleapis.com/maps/api/js"></script>
+		<!--<script src="http://maps.googleapis.com/maps/api/js"></script>-->
 		<script src="wellington-undiscovered.js"></script>
 	</head>
 
-	<body>
+	<body onload="onLoad()">
 		<ul class="main-nav-top">
 			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">Wellington Undiscovered</a></li>
+			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">Near Me</a></li>
+			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">Discover</a></li>
+			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">About</a></li>
+			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">Contact</a></li>
+			<li class="nav-item wellington"><a href="wellington-undiscovered-discover">How it started</a></li>
+			<li class="nav-item wellington donate"><a href="wellington-undiscovered-discover">Donate</a></li>
 		</ul>
 
-		<img class="cover-image" src="resources/images/wellington-night.jpg">
+		<img id="cover-image" src="resources/site-images/wellington-background.jpg">
 
 		<ul class="special-item-list">
 			<li class="special-item">
@@ -43,13 +49,49 @@
 			
 		</div>
 
-		<h1>Places Near You</h1>
+		<h1 class="center spacing border-color"><center>Places Near You</center></h1>
 
-		<div id="floating-panel">
-     		 <input id="address" type="textbox" value="Sydney, NSW">
-     		 <input id="submit" type="button" value="Geocode">
+		<div id="floating-panel" class="center spacing">
+     		 <input id="address" type="textbox" placeholder="Example: Sydney, NSW">
+     		 <input id="submit" type="button" value="Geocode" onclick="codeAddress()">
     	</div>
     	
-    	<div id="googleMap"></div>
+    	<div id="googleMap" class="center spacing border-color"></div>
+
+    	<div class="discover-container">
+    		<ul class="discover-list">
+    			<li class="discover-item"><div class="discover-card">
+    				<img src="http://placehold.it/350x400">
+    				<h1>Example Location</h1>
+    				<p>This is one of the awesome places that you can visit</p>
+    			</div></li>
+
+    			<li class="discover-item"><div class="discover-card">
+    				<img src="http://placehold.it/350x400">
+    				<h1>Example Location</h1>
+    				<p>This is one of the awesome places that you can visit</p>
+    			</div></li>
+
+    			<li class="discover-item"><div class="discover-card">
+    				<img src="http://placehold.it/350x400">
+    				<h1>Example Location</h1>
+    				<p>This is one of the awesome places that you can visit</p>
+    			</div></li>
+
+    			<li class="discover-item"><div class="discover-card">
+    				<img src="http://placehold.it/350x400">
+    				<h1>Example Location</h1>
+    				<p>This is one of the awesome places that you can visit</p>
+    			</div></li>
+    		</ul>
+    	</div>
+
+    	<div class="person-in-need">
+    		<img src="resources/site-images/happy-man.jpg">
+    	</div>
+
+    	<div class="footer">
+    		
+    	</div>
 
 </html>
