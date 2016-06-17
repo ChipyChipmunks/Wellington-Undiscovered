@@ -1,0 +1,196 @@
+
+
+body {
+	
+}
+
+.container {
+	min-width: 480px;
+}
+
+
+.hamburger {
+	font-size: 1.5em !important;
+	float: left;
+	width: 100%;
+	padding: 1em;
+	margin: 0 auto;
+	margin-bottom: 1em; 
+	float: left;
+	background-color: #333;
+	color: white;
+}
+
+.hamburger :hover {
+	cursor: pointer;
+}
+
+.hamburger p {
+	all:unset;
+	text-align: center;
+	padding-left: 4em;
+}
+
+#main-nav-top {
+  top: 0;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  background-color: rgba(20,20,20,0.5);
+  padding: 1em 0;
+  margin: 0 auto;
+  display: none;
+}
+
+#main-nav-top-mobile {
+	all:unset;
+	top: 0;
+	width: 100%;
+	margin: 0 auto;
+	display: block;
+	background-color: #333;
+	text-align: center;
+	text-decoration: none;
+	list-style-type: none;
+	display: none;
+}
+
+.nav-item-mobile {
+	padding: 0.75em;
+	list-style-type: none;
+}
+
+#main-nav-top-mobile :hover { 
+	background-color: #555;
+}
+
+.nav-item-mobile a{
+	width: 100%;
+	height: 100%;
+	text-decoration: none;
+	color: #fff;
+}
+
+.nav-item {
+	text-decoration: none;
+	color: white;
+	display: table-cell;
+	width: auto;
+	text-align: center;
+	margin-top: 10px;
+}
+
+#cover-image {
+	width: 100%;
+	height: 0 auto;
+	top: 0;
+}
+
+.special-item-list {
+	position: relative;
+	list-style-type: none;
+    margin: 0 auto;
+    padding: 0;
+    z-index: 1;
+    display: none;
+}
+
+.special-item {
+	margin-top: -300px;
+	float: right;
+	z-index: 100;
+}
+
+.special-item-img {
+	border-radius: 50%;
+	width: 100px;
+	height: 100px;
+	display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.special-item-title {
+	max-width: 125px;
+	font-size: 1.25em;
+}
+
+.special-item-paragraph {
+	max-width: 150px;
+}
+
+
+h1 {
+	margin: 0 auto;
+	font-size: 2em;
+}
+
+.title-block {
+	margin-left: 1em;
+	max-width: 640px;
+}
+
+.discover-list {
+	text-decoration: none;
+	list-style: none;
+	margin: 0 auto;
+	width: 80%;
+	align-content: center;
+}
+
+.discover-item{
+	padding: 0em 0.5em 0em 0.5em;
+}
+
+.discover-item:nth-child(n+4){
+	display: none;
+}
+
+.discover-card {
+	display: table-cell;
+	width: 100px;
+	height: 100px;
+	float: right;
+	margin: 1em 1em 1em 1em;
+}
+
+.img {
+	content: url(resources/site-images/litterally_its_just_a_tree.jpg) no-repeat;
+	width: 100px;
+	height: 100px;
+	border-radius: 50%;
+	border: 3px solid #05bf05; 
+}
+
+.person-in-need {
+  	width: 100%;
+  	padding: 1em;
+  	background-color: #333;
+}
+
+.person-in-need p {
+	width: 90%;
+	display: inline-block;
+}
+
+.person-in-need img {
+  	height: 120px;
+  	width: 120px;
+  	border-radius: 50%;
+  	border: 3px solid #05bf05;
+  	margin: 0.75em 0.5em 0.5em 0.5em;
+  	float: left; 
+  }
+
+.footer {
+  	background-image: url("../resources/site-images/footer-background.jpg");
+  	position: relative; 
+  	display: inline-block;
+  	width: 100%;
+  }
+
+  #bottom-nav {
+  	display: none;
+  }
